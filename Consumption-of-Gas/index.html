@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C-Calc</title>
+    <link rel="stylesheet" href="/CSS/main.css">
+    <link rel="stylesheet" href="/CSS/loading.css">
+</head>
+<body>
+    
+    <!--Loading Screen-->
+    <section class="loading">
+        <section class="loading-upper">
+            <i id="cloudFirst" class="fa-solid fa-cloud"></i>
+            <i id="sun" class="fa-solid fa-cloud-sun"></i>
+            <i id="cloudSecond" class="fa-solid fa-cloud"></i>
+            <i id="tree" class="fa-solid fa-tree"></i>
+            <i id="car" class="fa-solid fa-car-side">
+                <i id="light" class="fa-solid fa-angles-left"></i>
+            </i>
+        </section>
+
+        <section class="loading-lower">
+            <section class="loading-lower-road">
+            </section>
+            
+            <p class="loading-lower-title">
+                FILIP SAMÓL <BR>
+                <a class="loading-lower-text">
+                    C-CALC
+                </a>
+            </p>
+        </section>
+    </section>
+
+    <!--Website-->
+    <nav class="navigation">
+        <p class="navigation-title">
+            C - CALC 
+            <i id="navigation-title-icon" class="fa-solid fa-car-side"></i>
+        </p>
+    </nav>
+
+    
+    <section class="content">
+        <p class="content-title">
+            CHOSE TYPE OF FUEL
+        </p>
+        <section class="content-type">
+            <section class="content-type-item" id="gas95">
+                <p class="content-type-item-title">
+                    PB 95
+                </p>
+                <p class="content-type-item-price">
+                    6.59 zł
+                </p>
+            </section>
+
+            <section class="content-type-item" id="gas98">
+                <p class="content-type-item-title">
+                    PB 98
+                </p>
+                <p class="content-type-item-price">
+                    7.32 zł
+                </p>
+            </section>
+
+            <section class="content-type-item" id="dieselON">
+                <p class="content-type-item-title">
+                    ON
+                </p>
+                <p class="content-type-item-price">
+                    7.79 zł
+                </p>
+            </section>
+
+            <section class="content-type-item" id="dieselONPlus">
+                <p class="content-type-item-title">
+                    ON +
+                </p>
+                <p class="content-type-item-price">
+                    8.14 zł
+                </p>
+            </section>
+
+            <section class="content-type-item" id="LPG">
+                <p class="content-type-item-title">
+                    LPG
+                </p>
+                <p class="content-type-item-price">
+                    3.14 zł
+                </p>
+            </section>
+        </section>
+
+        <section class="content-split">
+            <section class="content-inputs">
+
+                <table class="content-inputs-holder">
+                    <tr>
+                        <td>
+                            DISTANCE [KM]
+                        </td>
+                    </tr>
+                    <tr class="space">
+                        <td>
+                            <section class="content-inputs-holder-box">
+                                <section class="remove-value-button" id="leftDistance">-</section>
+                                <input min="1" type="number" value="100" id="distance">
+                                <section class="add-value-button" id="rightDistance">+</section>
+                            </section>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            PRICE [ZŁ]
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <section class="content-inputs-holder-box">
+                                <section class="remove-value-button" id="leftPrice">-</section>
+                                <input min="1" type="number" step="0.25" value="6.59" id="price">
+                                <section class="add-value-button" id="rightPrice">+</section>
+                            </section>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            CONSUMPTION [L]
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <section class="content-inputs-holder-box">
+                                <section class="remove-value-button" id="leftCombustion">-</section>
+                                <input min="1" type="number" step="0.25" value="6.5" id="combustion">
+                                <section class="add-value-button" id="rightCombustion">+</section>
+                            </section>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <section class="content-results">
+                 <p class="content-results-title">
+                     RESULTS
+                 </p>
+    
+                 <p class="content-results-text">
+                    <a class="content-results-text-dark">DISTANCE<span id="distanceBox">n/a</span></a>
+                    <a class="content-results-text-light">PRICE<span id="priceBox">n/a</span></a>
+                    <a class="content-results-text-dark">CONSUMPTION<span id="combustionBox">n/a</span></a>
+                </p>
+
+                <p class="content-results-results">
+                    <a class="content-results-results-text">YOUR RIDE COST IS</a> <br> <span id="overallCost">n/a</span>
+                    <a class="content-results-results-text">PER KILOMETER</a> <br> <span id="kilometerCost">n/a</span>
+                </p>
+            </section>
+        </section>
+        <button>DO CALCULATION!</button>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer">
+        <p class="footer-title">
+            FILIP SAMÓL
+        </p>
+        <p class="footer-text">
+            Site made by student of Tadeusz Kościuszko Complex School in Milicz
+        </p>
+    </footer>
+
+    <!--JS Scripts-->
+    <script src="https://kit.fontawesome.com/8ff23d659e.js" crossorigin="anonymous"></script>
+    <script src="/JS/script.js"></script>
+
+</body>
+</html>

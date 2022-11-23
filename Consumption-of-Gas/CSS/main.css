@@ -1,0 +1,313 @@
+/* -----------------------------------
+                FONTS LINKS
+------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+
+/* -----------------------------------
+                GENERAL
+------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    caret-color: transparent;
+    background-color: #121212;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* -----------------------------------
+        NAVIGATION - STRUCTURE
+------------------------------------*/
+
+.navigation {
+    width: 100%; height: 80px;
+    background-color: black;
+}
+
+.navigation-title {
+    font-size: 50px;
+    color: #777;
+    font-family: 'Lalezar', cursive;
+    text-align: center;
+    line-height: 85px;
+}
+
+#navigation-title-icon {
+    color: #777;
+    font-size: 40px;
+}
+
+/* -----------------------------------
+        CONTENT - STRUCTURE
+------------------------------------*/
+
+#gas95 {
+    background-color: green;
+}
+
+#gas98 {
+    background-color: rgb(0, 112, 0);
+}
+
+#dieselON {
+    background-color: #111;
+}
+
+#dieselONPlus {
+    background-color: black;
+}
+
+#LPG {
+    margin-right: 0px;
+    background-color: royalblue;
+}
+
+#gas95, #gas98, #dieselON, #dieselONPlus, #LPG {
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+::selection {
+    background-color: white;
+}
+
+.content {
+    width: 50%; height: 800px;
+    background-color: #222;
+    margin: 100px auto;
+    border: solid 1px black;
+}
+
+.content-split {
+    width: 100%; height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    padding-top: 50px;
+    font-family: 'Lalezar', cursive;
+    padding-bottom: -20px;
+}
+
+.content-type {
+    width: 60%; height: 80px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-type-item {
+    width: 80px; height: 80px;
+    background-color: green;
+    margin-right: 20px;
+}
+
+.content-type-item-title {
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 900;
+}
+
+.content-type-item-price {
+    text-align: center;
+    padding-top: 10px;
+    font-weight: 300;
+}
+
+.content-inputs {
+    width: 40%; height: auto;
+}
+
+.content-inputs-holder {
+    width: 0%; height: 400px;
+    margin: 50px auto;
+}
+
+td {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 200;
+    color: white;
+}
+
+.content-inputs-holder-box {
+    width: 280px; height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    transition: 0.25s;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Lalezar', cursive;
+    background-color: #333;
+    border: none;
+    color: #777;    
+}
+
+input:focus {
+    outline: none;
+    background-color: #444;
+    color: #999;
+    caret-color: white;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+.add-value-button, .remove-value-button {
+    transition: 0.2s;
+    width: 40px; height: 40px;
+    background-color: #121212;
+    line-height: 40px;
+    text-align: center;
+}
+
+button {
+    transition: 0.3s;
+    width: 200px; height: 50px;
+    display: block;
+    margin: auto;
+    font-size: 22px;
+    font-weight: 200;
+    background-color: rgb(0, 117, 0);
+    color: white;
+    font-family: 'Lalezar', cursive;
+    border: none;
+
+}
+
+.content-results {
+    width: 40%; height: 400px;
+    background-color: #333;
+
+}
+
+.content-results-title {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 12px;
+    padding-top: 13px;
+    font-family: 'Lalezar', cursive;
+}
+
+.content-results-text-dark {
+    width: 100%; height: 40px;
+    background-color: #222;
+    display: block;
+    text-align: center;
+    font-weight: 200;
+    line-height: 40px
+}
+
+.content-results-text-light {
+    width: 100%; height: 40px;
+    display: block;
+    text-align: center;
+    font-weight: 200 ;
+    line-height: 40px;
+}
+
+
+#distanceBox, #priceBox, #combustionBox {
+    padding-left: 50px;
+    text-align: left;
+    width: 90px; height: 40px;
+    display: block;
+    font-weight: 600;
+    float: right;
+}
+
+.content-results-results-text {
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    font-size: 20px;
+    font-family: 'Lalezar', cursive;
+}
+
+#overallCost, #kilometerCost {
+    width: 150px; height: 40px;
+    background-color: #222;
+    font-size: 20px;
+    margin: auto;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+}
+
+/* -----------------------------------
+            FOOTER
+------------------------------------*/
+
+.footer {
+    width: 100%; height: 200px;
+    background-color: black;
+}
+
+.footer-title {
+    text-align: center;
+    color: #222;
+    font-size: 40px;
+    padding-top: 20px;
+    letter-spacing: 20px;
+    font-family: 'Lalezar', cursive;
+}
+
+.footer-text {
+    color: #222;
+    padding-top: 0px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    text-align: center;
+    font-family: 'Lalezar', cursive;
+}
+
+/* -----------------------------------
+        HOVER EFFECTS
+------------------------------------*/
+
+#gas95:hover, #gas98:hover, #dieselON:hover, #dieselONPlus:hover, #LPG:hover {
+    background-color: white;
+    color: black;
+    box-shadow: #888 0px 5px 0px;
+}
+
+button:hover {
+    background-color: rgb(0, 155, 0);
+    transform: scale(98%);
+    box-shadow: 0px 5px 0px white;
+    cursor: pointer;
+}
+
+.add-value-button:hover {
+    background-color: rgb(0, 92, 0);
+    color: white;
+    font-size: 34px;
+    cursor: pointer;
+}
+
+.remove-value-button:hover {
+    background-color: rgb(110, 0, 0);
+    cursor: pointer;
+    font-size: 34px;
+    color: white
+}

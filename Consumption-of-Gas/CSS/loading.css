@@ -1,0 +1,171 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+/* -----------------------------------
+     LOADING SCREEN - ANIMATIONS
+------------------------------------*/
+
+@keyframes car {
+    0%      {transform: translateY(2px) rotate(0deg);}
+    20%      {transform: translateY(2px) rotate(0deg);}
+    40%     {transform: translateY(-5px) rotate(2deg);}
+    60%     {transform: translateY(2px) rotate(0deg);}
+    80%     {transform: translateY(-5px) rotate(-2deg);}
+    100%     {transform: translateY(2px) rotate(0deg);}
+}
+
+@keyframes awayTree {
+    from    {transform: translateX(0px)}
+    to      {transform: translateX(-800px);}
+    
+}
+
+@keyframes awayRoad {
+    from    {transform: translateX(0px);}
+    to      {transform: translateX(-1600px);}
+}
+
+@keyframes awayCloud {
+    from    {transform: translateX(0px);}
+    to      {transform: translateX(-160px);}
+}
+
+@keyframes awaySun {
+    from    {transform: translate(0px, 0px);}
+    to      {transform: translate(-80px, 20px);}
+}
+
+@keyframes letterBreath {
+    0%      {letter-spacing: 10px; color: #555;}
+    50%     {letter-spacing: 14px; color: #333}
+    100%    {letter-spacing: 10px; color: #555}   
+}
+
+@keyframes showUpper {
+    from    {transform: translateY(0px);}
+    to      {transform: translateY(-600px);}
+}
+
+@keyframes showLower {
+    from    {transform: translateY(0px);}
+    to      {transform: translateY(600px);}
+}
+
+@keyframes byeBye {
+    from    {}
+    to      {opacity: 0; pointer-events: none; display: none;}
+}
+
+/* -----------------------------------
+     LOADING SCREEN - STRUCTURE
+------------------------------------*/
+
+#sun {
+    animation: awaySun 4s 0.1s;
+    color: #121212;
+    font-size: 100px;
+    text-align: center;
+    display: block;
+}
+
+#cloudFirst {
+    animation: awayCloud 8s 0.1s;
+    color: #121212;
+    font-size: 80px;
+    padding-top: 1%;
+    padding-left: 80%;
+}
+
+#cloudSecond {
+    animation: awayCloud 6s 0.1s;
+    color: #121212;
+    font-size: 100px;
+    padding-left: 10%;
+}
+
+#car {
+    animation: car 1s 0.1s infinite;
+    color: #111;
+    display: block;
+    position: absolute;
+    bottom: -2%;
+    z-index: 100;
+    left: calc(50% - 80px);
+    font-size: 100px;
+    display: block;
+}
+
+#light {
+    font-size: 70px;
+    position: absolute;
+    color: rgb(131, 98, 15);
+    margin-top: 20px;
+}
+
+#tree {
+    animation: awayTree 6s 0.1s infinite linear;
+    animation-fill-mode: both;
+    color: #121212;
+    font-size: 200px;
+    display: block;
+    position: absolute;
+    left: 20%;
+    bottom: -2%;
+}
+
+.loading {
+    width: 100%; height: 100%;
+    position: fixed;
+    animation: byeBye 0.25s 3.5s;
+    animation-fill-mode: both;
+    background-color: #333;
+}
+
+.loading-upper {
+    animation: showUpper 1.5s 3s, byeBye 1s 3.5s;
+    animation-fill-mode: both;
+    width: 100%; height: 50%;
+    background-color: #222;
+}
+
+.loading-lower {
+    animation: showLower 1.5s 3s, byeBye 1s 3.5s;
+    animation-fill-mode: both;
+    width: 100%; height: 50%;
+    background-color: #121212;
+}
+
+.loading-lower-road {
+    animation: awayRoad 10s 0.1s infinite linear;
+    animation-fill-mode: both;
+    width: 300%; height: 100px;
+    position: absolute;
+    margin-top: 10px;
+    border-top: dashed #222 5px;
+}
+
+.loading-lower-title {
+    animation: letterBreath 2s 0.1s infinite ;
+    font-size: 50px;
+    color: #555;
+    text-align: center;
+    padding-top: 5%;
+    letter-spacing: 10px;
+    font-family: 'Lalezar', cursive;
+}
+
+.loading-lower-text {
+    font-size: 20px;
+    color: #555;
+    text-align: center;
+    font-family: 'Lalezar', cursive;
+    letter-spacing: 30px;
+}
+
